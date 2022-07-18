@@ -1,0 +1,17 @@
+<header class="header">
+    <img src="/images/daf-logo.svg" alt="logo">
+    <div class="marquee">
+        <p>Welcome to <span class="daf">DAF</span>- <span class="daf">DAF</span> Trucks Ltd, Netherlands</p>
+    </div>
+</header>
+<nav class="nav">
+    <ul class="nav-list">
+      <% for(var i=0; i < nav.length; i++) { %>
+        <li class="nav-item">
+          <a href="<%= nav[i].href %>" class="nav-link">
+            <%= nav[i].text %>
+          </a>
+        </li>
+        <% } %>
+    </ul>
+  </nav>

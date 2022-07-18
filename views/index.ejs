@@ -1,0 +1,240 @@
+<div class="breadcrumbs">
+  <ul class="breadcrumbs-list">
+    <% for(var i=0; i < breadcrumbs.length; i++) { %>
+      <li class="breadcrumb-item">
+        <a href="<%= breadcrumbs[i].href %>" class="breadcrumb-link">
+          <%= breadcrumbs[i].text %>
+        </a>
+      </li>
+      <% } %>
+  </ul>
+</div>
+
+<aside class="filter">
+  <div class="filter-container">
+    <p class="filter-result">
+      <span class="number">26</span> Results Found
+    </p>
+    <div class="filter-param">
+      <p class="param-heading">
+        Axle configuration
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      <div class="filter-items">
+        <input type="checkbox" name="checkbox" id="checkbox1" class="filter-checkbox" value="4x2">
+        <label class="filter-label-checkbox" for="checkbox1">4x2</label>
+        <input type="checkbox" name="checkbox" id="checkbox2" class="filter-checkbox" value="4x4">
+        <label class="filter-label-checkbox" for="checkbox2">4x4</label>
+        <input type="checkbox" name="checkbox" id="checkbox3" class="filter-checkbox" value="6x2">
+        <label class="filter-label-checkbox" for="checkbox3">6x2</label>
+        <input type="checkbox" name="checkbox" id="checkbox4" class="filter-checkbox" value="6x4">
+        <label class="filter-label-checkbox" for="checkbox4">6x4</label>
+        <input type="checkbox" name="checkbox" id="checkbox5" class="filter-checkbox" value="6x6">
+        <label class="filter-label-checkbox" for="checkbox5">6x6</label>
+        <input type="checkbox" name="checkbox" id="checkbox6" class="filter-checkbox" value="8x2">
+        <label class="filter-label-checkbox" for="checkbox6">8x2</label>
+        <input type="checkbox" name="checkbox" id="checkbox7" class="filter-checkbox" value="8x4">
+        <label class="filter-label-checkbox" for="checkbox7">8x4</label>
+      </div>
+      </p>
+    </div>
+    <div class="filter-param">
+      <p class="param-heading">
+        Payload
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      <div class="filter-items">
+        <input type="radio" name="radio" id="radio1" class="filter-radio" value="0 - 5000 kg">
+        <label class="filter-label-radio" for="radio1">0 - 5000</label>
+        <input type="radio" name="radio" id="radio2" class="filter-radio" value="5000 - 10000 kg">
+        <label class="filter-label-radio" for="radio2">5000 - 10000</label>
+        <input type="radio" name="radio" id="radio3" class="filter-radio" value="10000 - 15000 kg">
+        <label class="filter-label-radio" for="radio3">10000 - 15000</label>
+        <input type="radio" name="radio" id="radio4" class="filter-radio" value="15000 - 20000 kg">
+        <label class="filter-label-radio" for="radio4">15000 - 20000</label>
+      </div>
+      </p>
+    </div>
+    <div class="filter-param">
+      <p class="param-heading">
+        Year
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </p>
+      <div class="filter-items">
+        <input type="text" name="number" id="number1" class="filter-number" placeholder="min" min="1">
+        <input type="text" name="number" id="number2" class="filter-number" placeholder="max" min="1">
+      </div>
+    </div>
+    <div class="filter-param">
+      <p class="param-heading">
+        Make
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      <div class="filter-items">
+        <input type="text" name="text" id="text" class="filter-text" placeholder="Keyword">
+      </div>
+      </p>
+    </div>
+
+    <input type="button" value="SEARCH" class="filter-btn">
+  </div>
+</aside>
+
+<main class="main">
+  <h1 class="main-heading">
+    <%= h1 %>
+  </h1>
+
+  <div class="main-pagination-sort">
+    <ul class="main-pagination">
+      <li class="pagination-button back disabled-pagination-button">&#60;</li>
+      <li class="pagination-button active-pagination-button">1</li>
+      <li class="pagination-button">2</li>
+      <li class="pagination-button">3</li>
+      <li class="pagination-button next">&#62;</li>
+    </ul>
+
+    <div class="main-sort">
+      Sort by
+      <div class="param-heading">
+        Sort Options
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="sort-options">
+          <div class="sort-option">
+            Alphabetically
+          </div>
+          <div class="sort-option">
+            Price
+          </div>
+          <div class="sort-option">
+            Year
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-listing">
+    <% for(var i=0; i < stock.length; i++) { %>
+      <a href="<%= stock[i].href %>" class="items-link">
+        <div class="listing-items">
+          <img src="<%= stock[i].image %>" alt="image" class="items-image">
+          <div class="items-body">
+            <h3 class="items-title">
+              <%= stock[i].title %>
+            </h3>
+            <% if(stock[i].price_currency==="EUR" ){ %>
+              <div class="items-price"><span class="price-currency">€</span>
+                <%= stock[i].price %>
+              </div>
+              <% }else{ %>
+                <div class="items-price"><span class="price-currency">$</span>
+                  <%= stock[i].price %>
+                </div>
+                <% } %>
+                  <p class="items-description">Item Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nulla quis distinctio, officia tenetur a eaque deleniti, impedit accusamus, alias provident
+                    sint id odio neque laudantium! Saepe quisquam libero soluta itaque?</p>
+                  <div class="items-characteristics">
+                    <div class="items-model">Model:<span class="model-name">
+                        <%= stock[i].model %>
+                      </span></div>
+                    <div class="items-type">Type:<span class="type-name">
+                        <%= stock[i].type %>
+                      </span></div>
+                    <div class="items-payload">Payload:<span class="payload-value">
+                        <%= stock[i].payload %>
+                      </span></div>
+                    <div class="items-gross-weight">Gross Weight:<span class="gross-weight-value">
+                        <%= stock[i].gross_weight %>
+                      </span></div>
+                  </div>
+                  <div class="items-make">
+                    <%= stock[i].make %>
+                  </div>
+                  <div class="items-year">
+                    <%= stock[i].year %>
+                  </div>
+                  <div class="items-mileage">
+                    <%= stock[i].mileage %><span class="mileage-measure">
+                        <%= stock[i].mileage_measure %>
+                      </span>
+                  </div>
+                  <div class="items-axle-configuration">
+                    <%= stock[i].axle_configuration %>
+                  </div>
+                  <div class="items-power">
+                    <%= stock[i].power %><span class="power-measure">
+                        <%= stock[i].power_measure %>
+                      </span>
+                  </div>
+          </div>
+        </div>
+      </a>
+      <% } %>
+  </div>
+
+  <div class="main-pagination-sort">
+    <ul class="main-pagination">
+      <li class="pagination-button back disabled-pagination-button">&#60;</li>
+      <li class="pagination-button active-pagination-button">1</li>
+      <li class="pagination-button">2</li>
+      <li class="pagination-button">3</li>
+      <li class="pagination-button next">&#62;</li>
+    </ul>
+
+    <div class="main-sort">
+      Sort by
+      <div class="param-heading">
+        Sort Options
+        <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.2929 1L7.81087 8.355" stroke="#828282" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="0.5" y1="-0.5" x2="9.66503" y2="-0.5"
+            transform="matrix(-0.71253 -0.701641 0.71253 -0.701641 8.24289 8.1322)" stroke="#828282"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="sort-options">
+          <div class="sort-option">
+            Alphabetically
+          </div>
+          <div class="sort-option">
+            Price
+          </div>
+          <div class="sort-option">
+            Year
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="main-text">
+    <% for(var i=0; i < pageText.length; i++) { %>
+      <<%= pageText[i].tag %>>
+        <%= pageText[i].content %>
+      </<%= pageText[i].tag %>>
+      <% } %>
+  </div>
+</main>
